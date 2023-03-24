@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EmployeeApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    	<div class="content">
+		<div id="top">
+			<div class="topright">
+			 	<a href="#"><img src="images/sitemap.png" alt="Sitemap" /></a> ^ 
+			 	<a href="#"><img src="images/rss.png" alt="RSS" /></a>				
+			</div>
+		</div>
+		<div id="header">
+			
+			<div class="headings">
+				<h1>Employee App</h1>
+				<h2>simple EMS</h2>
+			</div>
+		</div>
+	
+			<div id="menu">
+			  	<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Employees</a></li>
+					<li><a href="#">Login</a></li>
+					
+			</div>	
+			
+		
+		<div id="main">
+			<div class="right">
+				
+				
+				<div class="nav">
+				<h2>Right Column</h2>
+				<div class="text">
+			You could use this space to display the latest news, a calendar, random photos, the choice is yours, its here if you need it.
+				</div>
+				<h2>More Links?</h2>
+					<ul>
+						<li><a href="http://www.openwebdesign.org">OWD</a></li>
+						<li><a href="http://www.designcreek.com">DesignCreek</a></li>
+						<li><a href="#">Link.three</a></li>
+						<li><a href="#">Link.four</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="left">
+			<%= yield %>
+			
+				
+	
+
+			</div>
+			
+		</div>
+		
+		<div id="footer">
+			<div class="info">
+				&copy; 2023 Sedin<br />
+			</div>
+		</div>
+	</div>
+
+  </body>
+</html>
